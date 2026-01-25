@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<<!DOCTYPE html>
 <html lang="fr">
 <head>
   <meta charset="UTF-8">
@@ -13,6 +14,8 @@
       height: 100vh;
       font-family: Arial, sans-serif;
       background-color: #f5f5f5;
+      text-align: center;
+      padding: 20px;
     }
     button {
       padding: 15px 30px;
@@ -29,21 +32,43 @@
       border-radius: 10px;
       display: none;
     }
+    .poeme {
+      margin-top: 20px;
+      font-size: 18px;
+      color: #333;
+      max-width: 600px;
+      display: none;
+    }
   </style>
 </head>
 <body>
 
   <button id="btn">Appuyez pour voir la plus belle au monde</button>
-  <img id="photo" src="photo.jpg" alt="La plus belle au monde">
+
+  <img id="photo" src="IMG-20260124-WA0033.jpg" alt="La plus belle au monde">
+
+  <div class="poeme" id="poeme">
+    <p>🌟 <b>Poème motivant</b> 🌟</p>
+    <p>Chaque jour est une nouvelle chance,</p>
+    <p>De briller, d’avancer, de prendre confiance.</p>
+    <p>Ne laisse jamais tes rêves s’éteindre,</p>
+    <p>Car en toi, une force peut tout atteindre.</p>
+    <p>Sois fier de ton chemin, même si parfois tu tombes,</p>
+    <p>Car c’est en te relevant que tu deviens plus grand.</p>
+    <p>Alors continue, ne lâche rien,</p>
+    <p>Car le meilleur est déjà en chemin.</p>
+  </div>
 
   <script>
     const btn = document.getElementById("btn");
     const photo = document.getElementById("photo");
+    const poeme = document.getElementById("poeme");
 
     btn.addEventListener("click", function() {
       photo.style.display = "block";
+      poeme.style.display = "block";
     });
   </script>
 
 </body>
-</html>
+      </html>
